@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="pop_window">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <!--开关按钮-->
+    <style name="SwitchButtonMD">
+        <item name="kswThumbDrawable">@drawable/ksw_md_thumb</item>
+        <item name="kswBackColor">@color/ksw_md_back_color</item>
+        <item name="kswBackMeasureRatio">1.45</item>
+        <item name="kswThumbMarginLeft">-16dp</item>
+        <item name="kswThumbMarginTop">-14dp</item>
+        <item name="kswThumbMarginRight">-16dp</item>
+        <item name="kswThumbMarginBottom">-14dp</item>
+        <item name="kswThumbWidth">@dimen/ksw_md_thumb_ripple_size</item>
+        <item name="kswThumbHeight">@dimen/ksw_md_thumb_ripple_size</item>
+    </style>
+</resources>
