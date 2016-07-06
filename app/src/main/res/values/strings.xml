@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">财金鸟</string>
+    <string name="tvStr">hello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am okhello, android 6.0,are you really, i am ok</string>
+
+    <string name="main_1">首页</string>
+    <string name="main_2">消息</string>
+    <string name="main_3">动态</string>
+    <string name="main_4">我的</string>
+</resources>

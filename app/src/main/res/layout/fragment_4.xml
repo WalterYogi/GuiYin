@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <com.wu.utils.CircleImageView
+                    android:id="@+id/img_user_face"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/guide1"
+                    fresco:civ_border_color="@color/black"
+                    fresco:civ_border_width="2dp" />
+
+                <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/image_view"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--fresco:fadeDuration="300"-->
+                <!--fresco:actualImageScaleType="focusCrop"-->
+                <!--fresco:placeholderImage="@color/white"-->
+                <!--fresco:placeholderImageScaleType="fitCenter"-->
+                <!--fresco:failureImage="@drawable/guide2"-->
+                <!--fresco:failureImageScaleType="centerInside"-->
+                <!--fresco:retryImage="@drawable/guide3"-->
+                <!--fresco:retryImageScaleType="centerCrop"-->
+                <!--fresco:progressBarImage="@drawable/guide4"-->
+                <!--fresco:progressBarImageScaleType="centerInside"-->
+                <!--fresco:progressBarAutoRotateInterval="1000"-->
+                <!--fresco:backgroundImage="@color/colorPrimary"-->
+                <!--fresco:overlayImage="@drawable/guide1"-->
+                <!--fresco:pressedStateOverlayImage="@color/red"-->
+                <!--fresco:roundAsCircle="true"-->
+                <!--fresco:roundedCornerRadius="1dp"-->
+                <!--fresco:roundTopLeft="true"-->
+                <!--fresco:roundTopRight="false"-->
+                <!--fresco:roundBottomLeft="false"-->
+                <!--fresco:roundBottomRight="true"-->
+                <!--fresco:roundWithOverlayColor="@color/white"-->
+                <!--fresco:roundingBorderWidth="2dp"-->
+                <!--fresco:roundingBorderColor="@color/black"-->
+                <!--/>-->
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="昵称" />
+            </LinearLayout>
+
+            <include layout="@layout/base_divider_horizontal_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/base_divider_horizontal_layout" />
+
+                <LinearLayout
+                    android:id="@+id/linear_resume"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_selector_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_user_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="简历" />
+
+                    <TextView
+                        android:id="@+id/tv_resume"
+                        style="@style/text_fragment4_hint_style"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:text="88"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_right"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <include layout="@layout/base_divider_horizontal_margin_layout" />
+
+                <LinearLayout
+                    android:id="@+id/linear_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_selector_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_user_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="收藏" />
+
+                    <TextView
+                        android:id="@+id/tv_comment"
+                        style="@style/text_fragment4_hint_style"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:text="88"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_right" />
+                </LinearLayout>
+                <include layout="@layout/base_divider_horizontal_margin_layout" />
+
+                <LinearLayout
+                    android:id="@+id/linear_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_selector_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_user_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="设置" />
+
+                    <TextView
+                        android:id="@+id/tv_setting"
+                        style="@style/text_fragment4_hint_style"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:text="88"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_right" />
+                </LinearLayout>
+
+                <include layout="@layout/base_divider_horizontal_margin_layout" />
+
+                <LinearLayout
+                    android:id="@+id/linear_user_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_selector_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_user_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="用户反馈" />
+
+                    <TextView
+                        android:id="@+id/tv_user_feedback"
+                        style="@style/text_fragment4_hint_style"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:text="88"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

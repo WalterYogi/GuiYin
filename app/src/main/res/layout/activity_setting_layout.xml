@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/base_toolbar_layout"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的账号"
+        android:layout_marginTop="20dp"
+        style="@style/text_setting_style"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息设置"
+        android:layout_marginTop="20dp"
+        style="@style/text_setting_style"/>
+    <include layout="@layout/base_divider_horizontal_margin_layout"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消除缓存"
+        style="@style/text_setting_style"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于财金鸟"
+        android:layout_marginTop="20dp"
+        style="@style/text_setting_style"/>
+    <include layout="@layout/base_divider_horizontal_margin_layout"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户协议"
+        style="@style/text_setting_style"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="退出账号"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/btn_selector_bg"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>
